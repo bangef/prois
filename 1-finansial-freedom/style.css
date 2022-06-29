@@ -1,0 +1,115 @@
+* {
+    font-family: 'Sora', sans-serif;
+}
+
+.cstm_bg {
+    background: url('img/bg.webp') #049C63;
+    background-repeat: repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.display_1 {
+    font-size: calc(2rem + 2.1vw);
+    font-weight: 800;
+    color: white;
+    padding-bottom: -10px;
+    margin-bottom: -5px;
+}
+
+.display_2 {
+    color: #444444;
+}
+
+.display_2_1 {
+    font-size: calc(.5rem + 2.1vw);
+    font-weight: 800;
+}
+
+.display_2_2 {
+    font-size: calc(.3rem + 2.1vw);
+    font-weight: 300;
+    color: whitesmoke;
+}
+
+.cstm_bg .display-2 {
+    font-weight: 100;
+}
+
+.input-group .input-group-text {
+    font-weight: 900;
+    color: #444444;
+    background-color: white;
+    border: none;
+    font-size: calc(1rem + 2.1vw);
+    /* font-size: 32px; */
+}
+
+.cstm_bg .form-control {
+    color: #444444;
+    border-left: none;
+    height: 2rem;
+}
+
+.cstm_bg .form-control-lg {
+    color: #444444;
+    font-weight: 800;
+    font-size: calc(1rem + 2.1vw);
+    padding: 1rem 1.5rem;
+    /* font-size: 32px; */
+}
+
+.cstm_card {
+    height: 150px;
+    padding: 11px;
+    border-radius: 1rem;
+    border: 1px solid grey;
+}
+
+.card_color_red,
+.card_color_yellow,
+.card_color_orange {
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+
+.card_color_red {
+    background: linear-gradient(78.32deg, #990000 0%, #049C63 99.35%);
+}
+
+.card_color_yellow {
+    background: linear-gradient(78.32deg, #FFEE63 0%, #049C63 99.35%);
+}
+
+.card_color_orange {
+    background: linear-gradient(78.32deg, #FF5B00 0%, #049C63 99.35%);
+}
+
+.card_color_red::before,
+.card_color_yellow::before,
+.card_color_orange::before {
+    height: 150px;
+    width: 100%;
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.card_color_red::before {
+    background-image: url('img/bg_learning.svg');
+}
+
+.card_color_yellow::before {
+    background-image: url('img/bg_lifestyle.svg');
+}
+
+.card_color_orange::before {
+    background-image: url('img/bg_save_money.svg');
+}
+
+.img_60px {
+    width: 60px;
+    height: 60px;
+}
