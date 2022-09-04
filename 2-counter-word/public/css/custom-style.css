@@ -1,0 +1,177 @@
+/* Mobile UI first */
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@300;500;700&display=swap");
+/* Reset CSS  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	height: 80vh;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title__content {
+	height: 10vh;
+	background-color: #645caa;
+	padding: 0.8rem;
+	color: white;
+	display: inline-block;
+	border-bottom-right-radius: 1rem;
+}
+
+.title__content h4 {
+	font-size: 1.563rem;
+	font-family: "Open Sans", sans-serif;
+}
+
+.counterbox {
+	max-width: 511px;
+	width: 100%;
+	height: 70vh;
+	background-color: #645caa;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	position: relative;
+}
+
+.counterbox__textarea {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.5rem;
+	background-color: #a084ca;
+	padding: 1rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	color: white;
+}
+
+.counterbox__counter {
+	width: 98%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 95%;
+}
+
+.counterbox__counter__item {
+	width: 96.42px;
+	height: 58.05px;
+	background-color: #645caa;
+	border: 0.2rem solid #a084ca;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	padding: 0.2rem;
+}
+.counterbox__counter__item:first-child {
+	margin-right: 1.5rem;
+}
+
+.counterbox__counter__item__title {
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: "Open Sans", sans-serif;
+}
+.counterbox__counter__item__output {
+	font-size: 21.25px;
+	font-weight: bold;
+	font-family: "Open Sans", sans-serif;
+}
+.footer {
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.4rem;
+	color: #645caa;
+	margin: 1rem auto;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+	.container {
+		height: 85vh;
+		padding: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.title__content {
+		border-bottom-right-radius: none;
+		background-color: white;
+		display: inline;
+		text-align: center;
+		height: 5vh;
+	}
+
+	.title__content h4 {
+		color: #645caa;
+		font-size: 61px;
+	}
+
+	.counterbox {
+		padding: 1rem;
+		height: 70vh;
+	}
+
+	.counterbox__counter__item {
+		width: 177px;
+		height: 106.55px;
+		background-color: #645caa;
+		border: 0.4rem solid #a084ca;
+		border-radius: 1rem;
+		display: flex;
+		flex-direction: column;
+		color: white;
+		padding: 0.4rem;
+	}
+	.counterbox__counter__item:first-child {
+		margin-right: 2rem;
+	}
+
+	.counterbox__counter {
+		width: 98%;
+		top: 90%;
+	}
+
+	.counterbox__textarea {
+		padding: 1.5rem;
+		font-size: 1.2rem;
+	}
+	.counterbox__counter__item__title {
+		font-size: 25px;
+	}
+	.counterbox__counter__item__output {
+		font-size: 39px;
+	}
+
+	.footer {
+		font-size: 0.6rem;
+	}
+}
+
+/* Large Screen */
+@media (min-width: 1024px) {
+	.title__content {
+		border-bottom-right-radius: none;
+		background-color: white;
+		display: inline;
+		text-align: center;
+		height: 2vh;
+	}
+
+	.counterbox__counter {
+		width: 98%;
+	}
+
+	.footer {
+		font-size: 0.8rem;
+	}
+}
